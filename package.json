@@ -1,0 +1,31 @@
+{
+  "name": "react-static-example-basic",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-static start",
+    "build": "react-static build",
+    "serve": "serve dist -p 3000",
+    "graphql": "node graphql.js"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-static": "1.x.x"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "cf-graphql": "^0.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "eslint-config-react-tools": "^1.0.6",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "serve": "^6.1.0"
+  }
+}
