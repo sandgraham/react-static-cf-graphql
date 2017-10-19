@@ -65,3 +65,6 @@ function fail (err) {
   console.log(err);
   process.exit(1);
 }
+
+// test the server
+// curl -H "Content-Type: application/json" -X POST -d '{"query":"{ unitVideos { label } }"}' http://localhost:4000/

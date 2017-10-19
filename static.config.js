@@ -6,21 +6,9 @@ import React, { Component } from 'react'
 const graphql = `http://localhost:${process.env.PORT || 4000}/graphql`
 
 export default {
-  getSiteProps: async () => {
-    const { data: header } = await axios.post(graphql, {
-      query: `
-        {
-          featurePagesNews {
-            path
-          }
-        }
-      `
-    })
-
-    return {
-      header: header.data.featurePagesNews
-    }
-  },
+  getSiteProps: () => ({
+    title: 'react-static & cf-graphql'
+  }),
 
   getRoutes: async () => {
     let paths = []

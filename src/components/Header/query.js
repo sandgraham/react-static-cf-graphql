@@ -1,7 +1,0 @@
-exports.query = `
-{
-  featurePagesNews {
-    path
-  }
-}
-`
